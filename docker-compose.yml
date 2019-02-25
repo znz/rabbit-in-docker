@@ -1,0 +1,8 @@
+version: '2'
+services:
+  sshd:
+    build: .
+    ports:
+    - "44422:22"
+    volumes:
+    - ".:/code"
